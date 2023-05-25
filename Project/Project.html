@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+<title>โรคมะเร็ง</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="Project.html" onclick="w3_close()" class="w3-bar-item w3-button">หน้าแรก</a>
+  <a href="Hospital1.html" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาล</a>
+  <a href="MAP/maphospital.html" onclick="w3_close()" class="w3-bar-item w3-button">แผนที่</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+<!--    <div class="w3-right w3-padding-16">Mail</div> -->
+  <H1><div class="w3-center w3-padding-16">โรคมะเร็ง</div></H1> 
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- 1-4 Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+    <img src="https://img.kapook.com/u/2018/wanchalerm/Health_01_61/ci2.jpg" alt="1" width="200" height="200">
+    <h3><a href="1.html" onclick="w3_close()" class="w3-bar-item w3-button">โรคมะเร็งปอด</a></h3>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://static.hd.co.th/system/image_attachments/images/000/131/347/original/butt-02-%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%A3%E0%B9%87%E0%B8%87%E0%B9%80%E0%B8%95%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A1.png" alt="2" width="200" height="200">
+      <h3><a href="2.html" onclick="w3_close()" class="w3-bar-item w3-button">โรคมะเร็งเต้านม</a></h3>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="data:image/png;base64,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" alt="3" width="200" height="200">
+      <h3><a href="3.html" onclick="w3_close()" class="w3-bar-item w3-button">โรคมะเร็งลำไส้</a></h3>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://png.pngtree.com/png-vector/20220616/ourmid/pngtree-sick-sad-liver-character-png-image_5090040.png" alt="4" width="200" height="200">
+      <h3><a href="4.html" onclick="w3_close()" class="w3-bar-item w3-button">โรคมะเร็งตับ</a></h3>
+    </div>
+  </div>
+  
+  <!-- 5-8 Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://obs-phwebsite-prd.obs.ap-southeast-2.myhuaweicloud.com/psuv/20221202102010-image.png" alt="5" width="200" height="200">
+      <h3><a href="5.html" onclick="w3_close()" class="w3-bar-item w3-button">โรคมะเร็งต่อมลูกหมาก</a></h3>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.salika.co/wp-content/uploads/2019/05/hope-for-cure-cholangiocarcinoma-cca-cancer.jpg" alt="6" width="200" height="200">
+      <h3><a href="6.html" onclick="w3_close()" class="w3-bar-item w3-button">โรคมะเร็งท่อน้ำดี</a></h3>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://cdn.data.thaivivat.co.th/web/health-ecom/images/cancer/about-cover-skin-cancer-logo.png" alt="7" width="200" height="200">
+      <h3><a href="7.html" onclick="w3_close()" class="w3-bar-item w3-button">โรคมะเร็งผิวหนัง</a></h3>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://media.istockphoto.com/id/1304619130/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%A3%E0%B9%87%E0%B8%87%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%99%E0%B9%89%E0%B9%8D%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%87.jpg?s=170667a&w=0&k=20&c=yiocX-UxAeLQ1Yf0_G7ZCgqyJQu6JQ14d4cknYmvORE=" alt="8" width="200" height="200">
+      <h3><a href="8.html" onclick="w3_close()" class="w3-bar-item w3-button">โรคมะเร็งต่อมน้ำเหลือง</a></h3>
+    </div>
+  </div>
+
+
+  <div class="w3-container w3-padding-32 w3-center">  
+    <img src="https://www.praram9.com/wp-content/uploads/2021/11/90445589_s.jpg" alt="1" class="w3-image" style="display:block;margin:auto" width="800" height="800">
+    <div class="w3-padding-32">
+      <h2><b>มะเร็ง คืออะไร ? </b></h2>
+      <h6>--- CANCER ---</h6>
+      <h4><p>คือภาวะที่เซลล์ในร่างกายมีการเปลี่ยนแปลงในระดับพันธุกรรม ทำให้มีการเจริญเติบโตมากขึ้นอย่างรวดเร็วจนไม่สามารถควบคุมและจำกัดขอบเขตได้ และทำให้มีการแพร่กระจายไปยังอวัยวะอื่นในร่างกาย เช่น ปอด ตับ สมอง กระดูก เป็นต้น ความผิดปกติของเซลล์นี้สามารถเกิดได้ทุกอวัยวะ เช่น ปอด ตับ เต้านม เป็นต้น ซึ่งสาเหตุและปัจจัยเสี่ยงของการเกิดมะเร็งแต่ละที่ก็มีความแตกต่างกันไป</p></h4>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <B><h3>จัดทำโดย</h3></B>
+      <h6><p>นางสาว ชลิดา ศิริทรัพย์ รหัสนิสิต 63103010251</p></h6>
+      <h6><p>นาย ธนวัฒน์ ทัพคูณ   รหัสนิสิต 63103010253</p></h6>
+      <h6><p>นางสาว ปริยา เวชชะ   รหัสนิสิต 63103010549</p></h6>
+    </div>
+  
+    <div class="w3-third">
+      <h3>สอบถาม</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="data:image/png;base64,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" class="w3-left w3-margin-right" style="width:50px">
+          <B><span class="w3-large">สถาบันมะเร็งแห่งชาติ</span></B><br>
+          <span><a href="https://www.nci.go.th/">สถาบันมะเร็งแห่งชาติ</a></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>CANCER</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Lung cancer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Breast cancer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">colon cancer</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Liver cancer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">prostate cancer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bile duct cancer</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Skin cancer</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Lymphatic cancer</span>
+      </p>
+    </div>
+  </footer> 
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

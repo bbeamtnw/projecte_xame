@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+<title>โรงพยาบาล</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="Project.html" onclick="w3_close()" class="w3-bar-item w3-button">หน้าแรก</a>
+  <a href="Hospital1.html" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาล</a>
+  <a href="#ติดต่อ" onclick="w3_close()" class="w3-bar-item w3-button">ติดต่อ</a>
+  </nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+<!--    <div class="w3-right w3-padding-16">Mail</div> -->
+  <H1><div class="w3-center w3-padding-16">โรงพยาบาล</div></H1> 
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+    <img src="https://dwr.go.th/uploads/images/news/2019/190811201029dkgL.jpg" alt="1" width="200" height="200">
+    <h6><a href="http://www.surinhospital.go.th/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลสุรินทร์ </a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="https://th.top10place.com/img_files/890194914327709" alt="2" width="200" height="200">
+      <h6><a href="http://www.uboncancer.go.th/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลมะเร็งอุบลราชธานี </a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="https://siph-space.sgp1.digitaloceanspaces.com/uploads/editor/1611230969_DSC_4038-Pano.jpg" alt="3" width="200" height="200">
+      <h6><a href="https://www.siphhospital.com/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลศิริราช</a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxQTExYUFBMWGBYZGhkZGhkaGRkaIBkZHBkZGR8ZGRwaHysiGh0oHRkZIzQjKCwuMTExGSE3PDcwOyswMS4BCwsLDw4PHRERHTApIigwMTAwMDAwMDYwMDAwMDAwMDAwMDIwMDAwMDAwOTAwMDAwMjAwMDAwMDAwMDAwMDAwMP/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xABJEAACAQIEAwUEBwQIBAUFAAABAhEAAwQSITEFQVEGEyJhgTJxkaEHFEJSscHRFSOS8CQzQ2JygrLxFqLS4TRzk8LiFzVTVWP/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAsEQACAgEDAwMDAwUAAAAAAAAAAQIRIQMSMQRBURMioWFxgTKRsRTB0eHw/9oADAMBAAIRAxEAPwALD3M91nsXA0Pku2mJ3By5l+62nuMdda0FtdBWF4bw1lxq3VM23zMHQ+F5kkGOccj+Vby84RZPIbczA2Fe501Rbyck3hDWFRstdwWJW6gddiNunKPiKkIrtjK1aJyVOmDstRMtEstMZKopCAxFcIqYrTCtUTBZERTStSkVyKZMDRDlpBakiugUbBQVg2GxqxsWFOhqrsGjwxjSuTVWcFEya5w8DnTbuGiCGn31yxjSNPxo2x4h+lRblHkbDK25hzvQ13DGrwYaBrUAsTTR1gbSpFo1FcNW+Iw4A03quu2pNWhqKWQPAAwp1vSiDhzThhT0q7mqEoFeuBanuWSOVcStuxg1DVt08WT0qW2hY6Crzh2CBjP4QKhq62xWx4qyHgVmPaX3VpsOwA8qrvAns1DiMeTpXm6ierKy0WohmNxpnTQUF9ak1CuGdzp86Pw/BwNWJJoVCCpg90jguNG1dSwx1nWrFVUDau3EW2jXbrZUUFj7h5D8N655ayiUULAPqbdaVVVz6QMFOnenb7BHLzNKh6zDsR44eL3rUpaNq2uk5F5wJ6+6jeG43EPeXLebMLaEgjMrMygwy9D6RvpWexpl3Mr7TEc9JMbTyrY9jsOBdvXJMI1tOgBRSIJ3Gw1qkWlyCi44XxfvMpAy3ApDWid1H3NPEBMzuJE6GaubF9XGm/MdNSPUab1i7eCNy3nMhl1UgwyuEtagjYzm/CjuG8Z0QXmy3NluCArGBAfkpIYdATO062hOUM832JtJ4NURUZWmYXFZvCwyt01g+YogrXdCakrRFqgcrTStEFaaVqqkKClaaRRJWmMlMpAIIpZakyUstNZrH4cQdaNN3SgBUlualON5CmdKEmj8FfyUIGNSLrSTVqmFOi3zsRIFCNiIPSp8A08qmxeGB1ia5LUZUynKK69cBHWg7pAqe5IkRQTqSda69NE2xd75VzvjSFuuiwTttVcAshdyakw+FdthReGwDHWNOv8AO9XnD0W2NAJ61HV11Fe0aMb5KnDcEvSOVWL8MKiWck+VGX+IHaq27imJ5muXfqTdukP7VwS20A0qaxZDmFX1qsvsy7ke6asOzmaTrvAoakWoOVhi7dFmtsWlBYyegFNN/NtpU3EMSkRImq/h7g3QNwTXJFNxcmirdOkXeBwsQW36V3jWCF6yyFFfYhWZkEg75k8SnzFFg1HcevNnKUpWdKikYbiP0fviLjXXdlZoJUXcwWABALKCQIgSBpFKtj31Km94fafLeGcs6rPtMo0AG5jce+tp2bc/V8Tdkybl0jXcBJAE6HWdPhWT4Ww71Ndjm0VR7ILb/wCWtLwG/wD0RRJ8TQZaZzXAvinYx+Xur0KbRz3RYJYItIVJHiu7wBAcgR8NjvVQUhFB1ECeh8KrB/h2NWxxH9H137omDoZKs22x1O24rjhfq7BlG10g7faeNeY0Gm/vq8J7WrRKUdw3hHGWsZAwL2woB5ukEqY++um245dK2dl1uKHQyp1BrC3FgAZdS6kHyNwk+8Q1ehWbcKo6AD5V0Q9qwTmwdrdNK0WUpjW6qpiMFK00pRJt0w26dSFB8lcyVPlrmSm3GIMlOVKly1w0ktRJW3Rkm+CayiD2jTndeW1V1ziNld7qfxA0O3aHDLu5PkAfxIiueXUaazuv7FFpz8Ghw+PAG0eVO+vSd6z2F4vbdohlElQzQAWHLf8An0qxS0TsCfcJoxelNbkwSUoumE4q90HrQgM8qnOCuQT3bwNSSpH41HaEGYHqQPxqkZRSwxXd5RNhcFmOw92pPwq2s4G2olxtyj8qrE4lk0Uqvn/tTEx1pif3wuEchP51zyk5Or/yUSpXQdicbPsrAHQfntQf1rzpl++zgDZeQG1ct4UkTVYQjFZEcm2SNjB92T1k0PdvM25NP7g9DTvq5G4p1tQtsgC0TaYimhKkUUZOwodmqS05BkHUVGBT0WpOgpl5geMzo+lENjlOxrPMoG1LPXK+lg3aLLWklRd975ilVHnNKj/To3qs8J4dbGZjMxbuHQHmhSdY+9V9ghltWx5BtRrorPp56bVRYa63d3jJ0RV57tcT8lPxrVX8GFCJvoRruJTu/wD3/Om0ap/YfUvA6+/2OUqnzVdPjvXLlyVUciE8vajl/m9Kdi11nfxz8Dm0/h2puIXKY6FfQLG/otdEoRTf0RK38jraljbHXu/kFP5V6X3dYPg+HzYmwnW6q/iIr2pMEn3VnyArn6jXWm0q7BhpuZkvqzb5T8DSbBv9xvga2ERypjXY8q5l1knwh306Xcy1rhFxt1y/4tKWI4OVE5h6VoMaQw9ofGq7ib27dlnlmK6wJJOsaD15Uy6mfL/gV6S4RUYbh5cwPWjDwZogKvvY/pNVKdolWTce5ZQAHOyGTqPCAATr1ihm7SYdz4MRi7kHa3bdZB5EOQD8OdcnUddquVafHk6dLp4KNz5+5eN2cYj+sA84J/SgcZ2XwmbNiL6/5nCCPcWigbeJD6DA4+7B0N3Iu8c15ae+gMHwUNmdeD52LsZa+UAM7RoNK5Xqa2om5SZbbpxpRRY3cHwYSDftMNiEuBj8bYzfOnL2n4RaAtqM2XYd1dPnu6ifjWVxOAbNiTkCFGgW1lghDZiqsOQVSJMb1fcKxl5LVsDG4S0uUaZVa6P8QIPi99NqaEVG3Jt2sXxaFhqycq21/pmgwfFbD5WtYN4uCQ3dKAfEV1Kzl1U7x1oscSxJUFMId4gvB2mcrBdPWsjjOJ2yct3i2Kdulm09sHTkUAFDRhn/ALDiuI/xGQffLTXNsLbzS9ocdi+7cf0ZFhs2ZvGR/wDzhyCx5AjpXmPEMfdBjvnPKO8RdfQ6e6tPi+EW8ua3wS6CJ/ePdKm3p/WZdmK7x5VkuJsM245/btSPgsj8a7umwmjl17dMH+sFt2k+bFv9I/OpsNxK5YdXWAJkyG1A1Ik+v8ih0adAZ30zO3+kCuOkRoR5w4685J9IrsizmZ7N2a4jYxVlHVddCQfsnpFWeIsD7onqNPlXnv0WWPHddrhULEplPjLg6lmg6ZBprW6u3hMyaepNg3KjlzCM2u9dThkgkn3Ty9KccfAgbVNhzcYaIcvWmcppeDLa2BHAAHU6U36lmML86uTw/mTSVETb40vrvsH0/JVPwplEyKG7qDrVzfytzNB3LS08NRv9Qs4JcANwydopoSrOxZQ/Zrt5NOQ8qf1VdC7HyVeQ12iZP8gUqfcwUeDYEA24DEZ7ttdFCzo5I0I01HurYYu2WuWxBOo3Ov8AW2jv0/d71l+DWINkMwAW9nb3AJl1IjcNWoQBsSpBlZBMD+5fJ/FfgK59OSo6JcnOLYX2QFIktv527g3G+rClxPDwR5swHIiUufoKIx75rllI3Mxrp+8tLsdtGPwp+PTx2gDMsOegOZFMHce3sar6jdibQzsvZBx2HjXxlvgfnvXrhTzrzfshhz9fszGi3Ty6LG29ekuK4+rnun+C2kqidqFmHSnF6jzVzpDtjGtpqYE1U9pI+rvGWPD937y9SB86uTaB51VdqbIXDsw6rzP3h0Un5UzlhipZMVhLgRmNu9h7Ry+3cFkjcaQoMn3tUl/jMe3xkxyFrDg+kpbqTDK7Zii2nMRF/vMkTyz5dfcK62KvJ7WK4Xa1+yFB+BJ1rz2/c7OzsqK+5jcO51xvErvlbFxJ9CQK5hbdjKQ2G4hcljGYjL6md+vnRV3idz7XGkA6WrCv6DIszQoxeHf28fi3bWBbS5bIEk76b6GnjdYElV5IrHDcQBeS1h8qXPYBuJKL5+LUxVjhcK9pEVsNgwRu90M5J+8SBE0MLeFcx9X4ld/xEEf6qmtcGtAg2+DPO4z3WTXroCKvqTuLtV+OaxnJKMKeHf5/jBMeKXhvxDAYcR7FsW5HTwtO+9D4jiqf2nG7rf8Al2T8JtKAKnwmAv5Bk4XhwJOt1w+vXUg+VTMMYn/62zrzWD75zHWuXCb4LJNoo8disGwn63xS4Z+ybpExzW5Ph8qzXFLmo8W2kC4NNtICyPnW4xvE7+Ug8awlo/3BaeBruCJrF8Uc6DNEQIFw+HQCIy6REaEzFdfTu7OfWVUAKMxAmfKbjfhArj2dvCR/kb8ZmnMZ5g+83T+ApG1p7J3+4eo5lprsTOVmz+izDBrl9dvCh2jYsOpPOvR7PCbcalj8q8++idSMQ5ywptsswB4lZDEDnB5mvSGejOcuExoRjVtDltqogII89ac98xv6CmLSA51KvJX7DC5PWmXLXnUzPTStMnQGgU4c0vqc0WFp4NFzYuxEaWQqxUL2gd6nc+dQ5fOhFvkLRH3C9BSqTSlT7mLR852sdYY+0ye8Ax8Mv50Xh72pFq4CdCDmy6eIfajqKzTWqbk6VyKVF9qZtP2hiFZGZS2XZjtyPtbchz5UVhONhnR3QgITtzko2+vNBz51isPjbyarcYetGWeO3ATmVXkyZGpMAb78htTx1ZLuBwPV+xXHcOuKDvcyL3ZUFtPESdDEgaRrpXpmHxdu4JS4rjqrA/hXzRZ4/bkZrbLBBkGf9UmrLCcbtTKXip85X560s5OTsywqPoZkroSvHeD9s8UirkxBbQaMQ/pBk1eYT6VLikresI0ECVJQ7Dk0yfhQtmTR6RlFUnbP/wAMwHNl6nnOwI6darsD9I2Dcw5e2T99ZHxWaf2o4nYvYebd624zrsyHkdw23qKxm8GVwuGz5l+qDERBy5hbykk6kgsdY+VHJgMR9nhWHUTMvdD69dYoO2LUS5xGsACyV8UE7wAsa/Oo2w+Gc/8A27GXDJ1cD8QTXJN5Z0RSpB5XFJuvDLQ8xB+OY61DZ4heUQeJ4O0JOiC2TudYKnegv2UhIycDcwNO8vOo1jSIidKJwPDcRGW3wfDBddblxXAMnSDBik3Y7D0S4jHCPHxi5H9yy3yKD8qDu4vCtvj+IPrsDcWfR4q17vHqQO74daSdfCZj+KJpt/HYlQZ4ngrWp27rQctGB1rSl/yoyiVWGsYVx/4bG3/NshG503n5UVa4daE91wdz/juOk/8AKRXcNjiQc3GVOp0tIrczr+7E6117lgkluIYx/JVvqB+Va226v5FpJZJLnD8QVOTg2FO3huXFaf4gNqx3FLLzlysI0yqzHLEgrABAKkZSQdSpNajimGwa2ybv151OkggmQM2kmdhWU4nxW4jKLN0JbyArnHiIlgM/gPjAAVtfaVqvpzlHt+5OUYy7kC8OvMdLbH3i4PyAqLE4RrfhZIO/ssR13Y/hR2Ex11kBa8zHqpI/6atktJdtol4EgwV7zcn71p5Pi3lSZ35b3hqybySnpxSwS9jmy2nYMwZLobTTQqv8869UdQa8r4dhHsF7RUulwiGUSUYTAuINRI+0OnKvUbAOVSeg/CrOVvknFUhLbjnUhNcrk1uQnaVcmlmrBERXMo61x3phaigWPNsda42UVEzUg55fhRFsdmHSlTczedKtaNk+brGGtXF9sLEbHl7jufOor3DH1NsFwCAdBppO9VzMKLwjC1cBdZA+zJWTExp7xpzrkSOhkTKy6tbYDzBH4iuZwa0mC7aFWYmyCGOsMQR4mbTTfUD0o3hGLs3ndr9q2CSNGTvImBrA8AhBqxHOqKEXwxG65RkFUGnGzXsHY3sBw/F2rty5an94wRkuOoygkaBTBBidqJxn0JYQybV/EWzyByOB/wAoPzpWqdGWTxcWWGxIPworD8Tv29FuGOh1B+NehY76F8Sv9Vi7Vw8u8R7fzGeqXiH0YcUt7YdLo627iH5MVPyrZMZ5OPtPjtIeuUFJ9+Xfaphxq0Rs6H0YegEU3HcAxVie+wl9PM23y/xRHzqsJQ86Vs1Go4P2pxFr+qxcAwCp3joA/h59avP+I8QSM+JvEExo+TlyKACdOteb3LQ5EGlZZ0IKOykbEEik2R5pDqT8nqWGxGGyzexnEWJ63ZB92sUPhhgGle54jiG6FlPuiXFYFOO3gZYh/NgJ+I1qx4f2syE5rR118JGh2nXX50i01VWN6j8G3w/C8KYy8ExTf+YWX4wxo63gGB/d8Ctjze6PzWsvY7cZ0yDE3EM83dIE9Z6edEYLF5iWu4jFXFA+xiXjrMyR86V6UvI61F4+DW8Ow2L1y8NwtvUiWKud/IjSjmXGLMtg7f8Akj4y5rL2UwCiWXGXTJ0LI8DzzMPlRdq/gyP3XDb7DaQEA9SraUji3Lj4YVJJc/Jb/W7wDRjsNbObxEtbifKRWA7XWB9YkNbullzNcLQGYsxLIFaCpJJkCJzVsreHEGOFMQRoC7DSNQYU61592oxWS4oSwtkAMO4uTmsHRioOko2YODB1dhyq8o+7HhdicZe3PkmwK+H+z0PJSfmUNXNi+VSAfCQfCw8DRPsHKIYRPoNRWb4ZjyV1CHXkv6rNX+AuTaJMqDKmVBQ/4tBB10391GMWuRZST4NSyydNwJAmGHmh+0PI6VoOH8YdUBuC48+EZbZnQTJHn1POsnjcQBbEtBIBUSNTv4G3Vqt+DXc2HGYydJzBc0gsNRrG/Sk1ZyglJDaUFNuLNGvF00zBkkx4lIiROp2G9F5qxvGUiGAjRdYA+zl37sfd5tH901pezzzh7fuIPoxFdOlPfBSZLUjtk4hhJrhBqWPKosZiVtoWOkEA6E6EjoKaWoo8gUbGmocViFtqWYwB8SeQA5k0VZdWAYGQRIPl61DjbBYCFkCdPPkfTWtPV2xbBGFuimftJZcMihg2UnWB79vKT6VSXeP3e9Ui4wQMsrOmhE6dIp/EsC63zdKwrErorCC6lRuKCxkZtOcmdJ1Ykf8AKRXHpyW+7u15+C009lcZN3Z4nZdQwviDqJ0+TAEetcrz1MSq6dJ+yOtKr7pErR5RxGFJthV8J3G58I0Pl+p60sDYuXJt2zEgsVLBQ2sc48hHlUfFx+9uEGfGw6bGNqlwIBVj3+RtIXxeKBOpHsgcvfyrRKPghtWVB/eZ1Hks8geZHX5irrg+Kw1skRfuMT4YyoBq4ncwYK/OqzBYRHIGcrJgHIWzHTYDYCetWPDeyty8MwdQmmpBkSqt7P8AmHOmin2FlXc9r+i/GIMIMxVC9y4VUuGYgsNTG5luU/OtkzAbkfGvnHhvFcRgsi277ZcquF+xLjNqhkMdRqRPSK2vB/pO7zwYkFWOneIWynbddSvzFJquccpWHTjGWGz1giRpr86S1m+A8Uzund3TctkEwrK4MBuYG8jqKq/pD7RtbGHFu41o3C4IJgg+ARo4DMJOkkfjRyakajjOP7gBydg3hzZc2mx0PTf9a8nxF1cSS1yxaBuMdDbZ2XNJ8TNbABnQ/GoeL8TFxobFgEEg5jdYjxNpo4I3jflQ6WbOQE4gvmJhocxGsQWMb86b02+RN6QXieyWEf8Assp/usw+QMfKsb2r4N9WuBbfed2yghmMiSTKggASI231rbYKyi5WR5JBmVILanxeWwHpVpdZDh7neAMk6grmkacoM1V6doRalM8x4Xw3vOrHXTQedXmN7KE2i+HsXnYR4F8cSdZjXlymjmwNm1etnDghbiFiDm0YSNA+q+6rEYK1dVVv3L9tRMGyQJJI0YlSPjHOp+n5GUrZ51i8G1vS7auWz0dGX8RUVtYMo8e4xW+v4LhYYI1rH3W8J3U5ZOXx6hUMgzO3uov9g8Ly5vql9jMFFuZmU/3+6cqn+Yjal2/UpZilx+JttpeW55+18yAaOwnax7cZrbLyzW23987/ABq7x/ZnBS/dd+jqSIVyynlEtbadfOKyeN4ZiEcoEa4TlYZVLEr4hrlG4iKzRqNVZ7cvcAH1t1IAEFmQzsddj8areP4K9fCM1xLzpmHeOSHZSVIUkGGCktB6PHKqPiPDmtFRcSMwncAjfdTrtB9agtgoT3dxk6QSJ98aGkVLtRnJvuWGCsvbBDpk16D8STNarsxiAFP7wjx7EAqZA0hd23/SspheP3rZ8QRx5gAn1XTnzFazs/iSUBhLQcBjnuWgGGokLJb/AJRzp1l4FeC44sIQRlUaDUHKRp4SNwdB8KtezdyMORoAJ2ZSPbXYm6IGu0AeZ51/FoYaXbYM8/tabFYMalT/AL0f2Unu7qyAQzew7R7IMwLgg6eR91c/WRcYu/JfpXcvwTcWylQQRsNZTk7TqG8+TVe9kX/o8dGI/A9B16CqfijwglxPj3Y6nwHne13219wqz7Ez3dxQNmB2jcf4R06ep3p+lnej+ROpVTL4CqbtJdi4iRpBafPr8JHrV53Z6is92tvKjJcZhGWDz5EfnS60sx/INJcjuEcTQWigZc6B4BI1IJMdZ12ptjiiszOpguFETsAfEPFA1MRsTXn3F+0GHZo7sucwIaGBCxJkEbc9OQrRcF43be2xUg2wQqu/g5A5ZbTmYMCubqdRyjT8ltCKUnXgtMa7ZWJgwM0SkygB+y51mshbc27t62xBAYZeXtEqANefg+Iqw4j2twyZhJcAEH56AxB1geszpWJ4rjbV3ELcfFJb/q3Kqt64ZyoRqFAkgDmdaHS7t9rgOu4ONdwPifE7LXXL3MQGzEESuhGkbDpSq34z2Oz3rjrddQzFo+rl9TqTmBEyZPrSr0/Sn4OPBhbwOdsyxJZoI12J36V3CcPe4zKIBXeT005U1rmvhLEa+15gjkfOrrs04L3NDrB11O5nUAeVQ1Z7IOS5ReOXQRw1cRbQoi2juVlgYk6jxDbQaeVHcOuYm2gt9xbIiJzrOwEjXooFTKo3jX3t/IqYWgdx8jXB/X6qx/Yo9GJT4rhl8uxNlyBkUQU1VUCTMzJyg7c6ExeGa0oa5aZdRqwG+vhMbiB7xWqv3O7WV0Egs2UiFEknQdBHrVXxLELewyF1YAuYmToJ1/EV06PU6s0m0suu5KUEroq+FcfuYe5nsXntnn0Pky6huk79KP4h2k+t3LXevldHDLl8SFjkAygmV1WYM+/lVbdwdm6T3RAACg5jHi0k6nXn8qssL2eCspnDQGBk3mnQjxQBE6bExpXopNkW0Ox95LbMWu3lBY+zatxqSYzHeh34jhiiy99odjEWwdVQaxpG8eYNEY/hxKsQmFJMnS8S09RnAE1k7sgmSDB+yZHpWnNxNGKaPRuHYtO7tKob2cwLRMS2hI5zNT8cxQXBXtdToNY18NeZ2MQyEMjspBkaxFOxXELl3+sctGok+7YbUPWW2qB6WTUcAx+fuhp+7V1330LT86J7bXclvDsrFSc+o9AdOY02PT0qm7O8GfvFZ1GQqxU5kIJKmJ9rkZgjlVzxziVs2rVu7agZbgOVUJ0LppNs5YcEgiKCzDJqqRlMNj3RpW4Rt6xoDB0kDadq33Y7teHuJZvwX1AuZoBBAhSPtMTp5xXmqMNJAPqeu+lFYS0WK5bWcZgMoJ11PhMdevupE2uCjiX3aPjly3iMRbR4XvW9mJEGMoPLXeq5OLYlVNxLjBQyrII0JViF9xCsduVB8X0v3tI8b6fd8R0P4VcYTh+HOHbNfGYtaJMwFOS54dU82055aXZcjXgz1zEkkkmSdydSa4j019CRoY5j8RTVpKDRM1w6HePn5GNa1drtRh7YQ21hlXLKW1VgNTGZySRJM6yZrL4jBOttXMQ3KRm6gkchQimni3Hg21NHovF+N2rXdOwm4baXFIQFirmPbOhOUcxHhHlQR+kC4lwvaUwVIPeRJYzqY0IiBEVXdrBNjAXOtjJ/AQPzrOZqOpcsPgWKrKNkv0lYk2yjhC2sMAVOvUAwRHKKu+A/SeMPZuAWj3roIYBcq3AW1KgDQzPX315qq9acWipKKimo4sM5OTybK/2xxNzNmv3Tm10YgT6HTWD6UNxjtPcvWQjnOfvnQjWY6cqy5xRjLOkzE8+vvpDEE6HUGk9PNm9wfbv+KWOUa7Ej4bxv8JpicRuABQzAAyBOk9QDpQaOZgc9BoDJ2G9GcbsMlwlly5vENucMRoTsTH+9Nssx1se0gkjNvMc99tpmjuJdo7l1rNwq47s6E3GMxAIG2Xfl1qhAJqfGZBlCTAGpPNiBOnLp6U0VtwjNeT0zhGGN6zbuhmGdQYzEwees66zSrM9ne2PcYdLWvhzcurM350qv6iE2sbgF4eBDWc7DQlTcYFvGdGzgEQmhH/apf2zZtBxbwCFCdWL5SdehLHSdwfhVFg1YI+S4mZGACGMzQTqJOoBdvhXLNhYm4zkqYKrkMGTuS2oIA1HP0rnlpq3uyjpUq4osl7SWgdMCnrduH8d6s8F28uBlUWERWhTlfMQvQA6UM/CMNaRTetXg7EQsgQDG8mBHvNQt2dD3O7tm6hDFQ7W8ylgSAc6aqsjfKakpwStYXmx83Ta/Yu73bq4CAiqZEzc8MRI0KHeB8vOgsT9JmL1XJagjmXIIjbU69KpeJ8PxmFym9cZQWyg52YQNZiYK+Xlyovg+Cv4w5rdu2QNCzC0onkMzuuZtNlFWjscb3fm8E3Jp1XwQjtW1xvFg8K0DlYViB60Hx2/nyObSWy1sgBVyKUD+ExzMaaflWwwnCL6exh8ONpuG8rDTU+G1czD+IzG3R2KxAN1XuDCIkQpLDOdOsnQE6rEAnfmZQ1I7qvjw7DOUdve/sYDDYA3LZKI7OCRCgtPs7gA7a1DiMC6bowiJkEQTyPQzW6d+HWF73v7ty6Cf3aOcmaT4llRGxiZjqdDVLgOMWMl3vrMhxEBjMFg8DzzAamuuO2Ubv4Ibn2KDAsEuKWzCCZAVWOxGziPjVre45qvdZwQYMpZGnUQm+3lpRNriWFZ1/o/gIPgLtJcABQzfa1jXQQTvFQ3xZecrkMWgWkA0HQMx0j3GnjHGGFy+gXgeM4m7dVTdZgM0fu1SDDD7I10j+KKI4hx3EqljJdYMyXBoA2ZheuINwRsoE8qrcRx4MttFLKqrlADsu5kSFgcuZPWnLxIf0csFi20nKNxnd9h5tTLUSVNk2s3RBa41eNyHZQWLK0WrRaehhNZIA86f+ycTYZsttokgFX58oKHU7bVYW+0yHS6hcF2ZgVJ0k5QkXECwumobXXXalf7R4aWCYNAkgopCmDEEuWJlp5gDSBypW4VbYbfgru4W9cJxF8I2UaLba42hykMB7Laak6yec1YNwjDLhrwW/cMvbIPdnlmy6aGYuajltQeG47fF1r6Kc2XLcMkKRM6wfDqNKV/tFfuT4kWSD7YOoKnWSZ1BOvNjSKcK+oc9imuYPKDJOnkP18j8KvcNwyzfNtUJRjpmygKWHNjnfcEjcagCOtVftM85r9vUlozMRJ1MACKcqqFyHEjL90K5G89OutJ6kV2C7ot7nD8yIDK+HK9zTIVV2EEHqVEeZqovcKUOBnItlyueEOkSCAH128vyrkWAIN64R0CwPnTHexByrcJjTMQB8jWerF9mZWjUE2DhcPaYtc7o3VJByLluXAwIZ1htl9k1nuI9zLlEyscpUB8wGrZpJUa+zoNNfSgDiTAWTlGw5D0ojA4tFnNaV+k6fkZrS1G1wCmgSamw2JyTpOxieasG/KPU1PjMSrZYw6oAZ2PiHQ6DSmY3Hhky9zbUmPEqwdKmrxgdI330YXsKuHdrpsi6brQzlQ8ZUgCdSPa2rH9qmstir7pczBrrtKxlysZGUzrv8qm7M8UPfWLfc24zIubL4tYWZ6maH/bdwad1Z6aL/wDKnlqNpKvkWqkwS09rKQV8UaGToddR4o6cjtRpvWDkPds8KFaWjaAIg75ViRG9M/bd3/8AHaH+Ufm1AYu4xYk78429I0pVKXhGH4qAdBGm0nTnz31qJLvvqTC3WB3Uf4oPyIP4VOHZRlD28szGWRJ99uhlmBWtzqAY5S4n10FKiO/PWz/6Y/6a5TW/AdxfXu1LQIS3Pn4vgKZhe0V22wuFUIEwrIqjbfQT/wB6o7Og002pzvpBj+en/el1fempATcXaLPiPaO7eJIhFJOigDU7kmJPx51Ph+0uIAI7wuSJUnXKd/cNOR0qjjKASCAdjG8GNJ0Otd73OYHPkABHuAgD4VzPRg41SpD+pK7thGNxl66/7wsxMkz6CYAAHpQ7sSBJMchyjXl6/OpO8hSAx6zP5cqQxxmcogcxvIHKnSxUUTcmyNiAOvP16ipcKuaNYgkeQ0BjTmZ60PcAOqg8vOJ86ke7B2gQTlgCTEAk++NPKjTqkCgu1YRlVWWACxBESQY57xoPlQmKtKp0ttlGmZpj0OwqU4keHxKDzgERpMbeKCTv+dKxf3B1UmCvXoRG4BAPpRUpLk1tE3CL+HbwXbaiY18R/PSr/D4fCg+AW5HMBfiDWPazl13knlt7+lPw4bNpp1M6actKpvayNfg2tzhFthEECCNPDod9qr27GWidLjgeh/KpeH8SZFCs53MnkPeaL+vEnw3PTwmqx1NOSWQWB2+w1rnccjyI/wCj86k/4LsD7x97gfpRAvN94z/O0Vy/nf25McyT+tVqHgOR6dnsPbRwBIPtAvExtqTHzqDD8CwpE9zt1Jf/AEsZpowxGyr8f1rjM45fMUtQ7I2Qn9jYXlbt+oJ+RGlCcSbCWRHc22b7oUaeZ6UjcfWSw8hlrM8TdlutMyddfMfyPSlm6WEa2WZ4wPsYeyv+UH9KgxGNe4IYjLzVQFHrG9VwuCnrcrlbkK2xtzCDeB8aGK5TOoIo8XvL8afZxMMGyiQQRpOuusGtGTXJk2SYXsvi7wzZMo3zOwXTzG/yobFcKVDDYm0SOS53j1y1p8H2zYCHQOI5n9dDTl4thHti2Ve0BMBDopJBOWNRJFXi4PuHfRUcFu97isOAGcK1tfAp2tkENtpG5PSrfGdimDE/VTDMcpN9RmBMgxy01irzsxxDC4cMBeQhmkCWEHaTnJJO3QVd4TtRg10a+onTVpysBGg+yCfd+lYqCjVglOTdmKwv0eXHJLpbtLpGZ3uE/wALLHzqf/6fxs6RyIRT8c0x862P7dsa3Ea0wAILCBl0GmvnvU6XBcCsomQNSp36CFg/hVIrTfAjnIw9vsEAfExbTZbdsGfcUM60S3YiyoMd4SOotqPituQN+Va22idW30MzE6weQpFcvtuI1hhIGusEg0dsfBtzMb/w0nJMTHLxL+VKtTI5MhHWBr86VHavBtx40TXVvlWVlJDKQQRuCNQR6016YCMwnbSdJgdY0n3TXE1ayVJ7uOd1KsZ1Y+IBoLEFipacsn7sVDaUD+Ypr3RmhZy8piY84qRboYZSAABvEEfrSVSC77jTcA25/wA/ClZsyQTtPTQ+RqZLaSNzyjaT1Om1PSddgOm2+8aR1pW64F3UOVQpYxoAGAA03H88omoMWWaDAUEaAaZoJMxy3A9wFPN3wwNPfOomYptwBwNQGHU7g9aEcPIEwRkM6r6U6ysws7nTpROFuQVaWDKZkNyjaImfWI5U3PBlREAgR/P86U99h7JcO0TOpG0xtMnnB92u5py3QJIG/rQDsRvvXc5AkD50uywUHC6Y8j7/AORU1nFFfZ0Gv8/hVcWYAEjQ+Y1jy5DUb09HJIjePwpXAVxNG2MZQJYQ2sAQPw1qRcfrA197E/CKrOH3lOlyN/OI18+scqPvYQAAgDaR7uoiujTnap8jIKfHgCZ99CPxlPP4E/7UBiQFgkCOUAkz561XXb46deTfrVQlv+2AdgR1P/eqjid7OQ2vSTQ+aefzqVGnQ+zz+f50jMDZqcLxqS/hY9k5h8xUFJQaTCO/605bo01oY02elDagbEGi5513vKBp2eKGwGwNF6nC4D0+f+1Am6acL551toNgaSPL0mpreOYDwuwHkxGu428xvVZ9Y6CujEHpQ2m2MubPG76arfuAxHtsfPmaLs9p8QP7QkdGgyepEamOtZwYjypwxFamDazWf8ZXPuWP4KVZTv8A3/ClRufk20P4z7CHmV1PM6LuarH50qVVnyFDW5f4h+AqTDfa9wpUqm+B3wT2t6gbc+/9KVKprkSPJMu389Kju+0Pd+ZpUqy5Fjydb9aR/KlSorkZckC/lUjcvOZ+FKlTMZjn/q09aWH9pKVKg+H+QMPO591XWFYm1qZiInWPCK7SqUP1IzBcWojb7QqqxSjNtypUq7TD7yDw6Dly91R3qVKoz5FfIOvtD0qK/t8K7SphwelSpVhxD+flSpUqxjh3pClSrGFSWlSomHNTaVKgBHaVKlSgP//Z" alt="4" width="200" height="200">
+      <h6><a href="https://chulalongkornhospital.go.th/kcmh/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลจุฬาลงกรณ์ </a></h6>
+    </div>
+  
+  
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+    <img src="https://www.rama.mahidol.ac.th/meded/sites/default/files/public/img2019/our_home_2/Payathai1.png" alt="1" width="200" height="200">
+    <h6><a href="https://med.mahidol.ac.th/rama_hospital/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลรามาธิบดี </a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Rajavithi_Hospital_2019-10-06.jpg/220px-Rajavithi_Hospital_2019-10-06.jpg" alt="2" width="200" height="200">
+      <h6><a href="https://www.rajavithi.go.th/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลราชวิถี </a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="https://hd.co.th/system/hospitals/hero_images/000/000/107/original/bhumibol-adulyadej-hospital-hero.jpg" alt="3" width="200" height="200">
+      <h6><a href="https://bhumibolhospital.rtaf.mi.th/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลภูมิพลอดุลยเดช </a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="https://www.amehb.com/wp-content/uploads/2019/08/news-Phramongkutklao-Hospital-site.jpg" alt="4" width="200" height="200">
+      <h6><a href="https://www.pmk.ac.th/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลพระมงกุฏเกล้า </a></h6>
+    </div>
+  
+  
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Vajira.jpg" alt="1" width="200" height="200">
+    <h6><a href="https://www.vajira.ac.th/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลวชิรพยาบาล</a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="https://www.chulabhornhospital.com/uploaded/images/1674789809202301276%E0%B8%A3%E0%B8%9E.%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A0%E0%B8%A3%E0%B8%93%E0%B9%8C" alt="2" width="200" height="200">
+      <h6><a href="https://www.chulabhornhospital.com/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลจุฬาภรณ์</a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="https://www.bkkcs.com/images/hospital/01Big.jpg" alt="3" width="200" height="200">
+      <h6><a href="https://www.wattanosothcancerhospital.com/" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลศูนย์มะเร็งกรุงเทพมหานคร </a></h6>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="https://cdn.bangkokhospital.com/2021/10/261020211635236430.jpeg" alt="4" width="200" height="200">
+      <h6><a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.bangkokhospital.com%2F2021%2F10%2F261020211635236430.jpeg&tbnid=1mH-K-IM4Jgr3M&vet=12ahUKEwiJwIr8-JD_AhX_23MBHQiHCxcQMygAegQIARAj..i&imgrefurl=https%3A%2F%2Fwww.wattanosothcancerhospital.com%2Fnews-events%2Felevate-service&docid=zm_XCJy17JdoRM&w=742&h=495&q=%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%A8%E0%B8%B9%E0%B8%99%E0%B8%A2%E0%B9%8C%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%A3%E0%B9%87%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%20%E0%B8%A7%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%82%E0%B8%AD&hl=en&ved=2ahUKEwiJwIr8-JD_AhX_23MBHQiHCxcQMygAegQIARAj" onclick="w3_close()" class="w3-bar-item w3-button">โรงพยาบาลมะเร็งกรุงเทพ วัฒนโอสถ</a></h6>
+    </div>
+  
+    </div>
+  
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="Hospital1.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="Hospital1.html" class="w3-bar-item w3-button w3-hover-black">1</a>
+      <a href="Hospital2.html" class="w3-bar-item w3-black w3-button">2</a>
+      <a href="Hospital3.html" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="Hospital4.html" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="Hospital4.html" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+ 
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
